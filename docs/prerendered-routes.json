@@ -1,0 +1,14 @@
+{
+  "routes": [
+    "/",
+    "/configuracion",
+    "/crear-usuario",
+    "/dashboard",
+    "/generar-reportes",
+    "/gestion-clientes",
+    "/gestion-proveedores",
+    "/login",
+    "/registro-gastos",
+    "/registro-ingresos"
+  ]
+}
