@@ -6,7 +6,11 @@ const app = express();
 
 conectarDB();
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://verguss23.github.io/FinanzasPro/',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+    credentials: true,
+}));
 
 app.use(express.json());
 

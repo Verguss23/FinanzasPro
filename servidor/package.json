@@ -4,12 +4,13 @@
   "description": "MEAN API",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ."
+    "dev": "nodemon .",
+    "start": "node index.js"
   },
   "author": "Miguel Bermejo Ael",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.9"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
