@@ -3,13 +3,14 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { Usuario } from '../models/usuario';
 import { response } from 'express';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsuarioService {
 
-  url = 'http://localhost:4000/api/usuarios/';
+  url = environment.apiUrl + '/usuarios/';
 
   private loggedIn = new BehaviorSubject<boolean>(false);
 
