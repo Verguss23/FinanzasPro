@@ -51,6 +51,50 @@
     font-weight: 500;
     margin-bottom: 5px;
   }
+
+  /* Toolbar styles */
+  mat-toolbar {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+  }
+  
+  mat-toolbar .spacer {
+    flex: 1;
+  }
+  
+  mat-toolbar i {
+    font-size: 20px;
+  }
+
+   /* Sidenav styles */
+   mat-sidenav {
+    background-color: #343a40; /* Dark gray */
+    color: #ffffff;
+    padding: 15px 0;
+  }
+  
+  mat-nav-list {
+    background-color: #343a40; /* Same dark background */
+  }
+  
+  mat-nav-list a {
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  mat-nav-list a:hover {
+    background-color: #495057; /* Slightly lighter gray for hover */
+    text-decoration: none;
+  }
+  
+  mat-nav-list a.active {
+    background-color: #007bff; /* Active link color */
+    font-weight: bold;
+  }
   
   form input,
   form select {
