@@ -23,5 +23,12 @@
   },
   "engines": {
   "node": "18.x"
-}
+},
+"build": {
+  "options": {
+    "outputPath": "docs",
+    "baseHref": "/"
+  }
+},
+"homepage": "/"
 }
