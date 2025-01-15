@@ -12,11 +12,9 @@ app.use(cors({
     credentials: true,
 }));
 
-app.use(express.static(path.join(__dirname, 'docs')));
-
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'docs', 'index.html')); // Cambia 'docs' por tu carpeta de build
-  });
+  res.sendFile(path.join(__dirname, 'docs', 'index.html')); // Cambia 'dist' por tu carpeta de build
+});
 
 app.use(express.json());
 
