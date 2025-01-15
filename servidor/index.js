@@ -12,10 +12,6 @@ app.use(cors({
     credentials: true,
 }));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'docs', 'index.html')); // Cambia 'dist' por tu carpeta de build
-});
-
 app.use(express.json());
 
 app.use('/api/usuarios', require('./routes/usuario'));
